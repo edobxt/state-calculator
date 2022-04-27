@@ -14,9 +14,9 @@ const App = () => {
   return (
     <div className="App">
         <h1>State Calculator </h1>
-        <label htmlFor={"premierNombre"}>Premier nombre : </label>
+        <label htmlFor={"premierNombre"} className={"label"}>Premier nombre : </label>
         <input
-            type="text" id={"premierNombre"} onChange={event => setPremierNombre(event.target.value)}/>
+            type="text" id={"premierNombre"} className={"input"} onChange={event => setPremierNombre(event.target.value)}/>
         <br/>
         <select id={"operateur"} onChange={event => setOperateur(event.target.value)}>
             <option value="+">➕</option>
@@ -25,9 +25,9 @@ const App = () => {
             <option value="/">➗</option>
         </select>
         <br/>
-        <label htmlFor={"secondNombre"}>Second nombre : </label>
+        <label htmlFor={"secondNombre"} className={"label"}>Second nombre : </label>
         <input
-            type="text" id={"secondNombre"}
+            type="text" id={"secondNombre"} className={"input"}
             onChange={event => setSecondNombre(event.target.value)}
         />
         <br/>
